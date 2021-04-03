@@ -1,8 +1,6 @@
 // getting price to bitcoin 
 // api utilized https://www.coindesk.com/
 // api utilized https://min-api.cryptocompare.com/
-
-const { addListener } = require('nodemon');
 const request = require('request');
 
 const getPrice = () => {
