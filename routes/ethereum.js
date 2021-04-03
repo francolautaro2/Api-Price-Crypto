@@ -1,7 +1,8 @@
 const express = require('express');
-const router = express.Router()
+const router = express.Router();
 
-const getPrice = require('../data/getPrice')
+const price = require('../data/getPrice');
+price.getPrice();
 
 router.get('/api/ethereum', (req,res) => {
     res.send(dataEthereum)
