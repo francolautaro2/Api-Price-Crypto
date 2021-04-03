@@ -18,7 +18,9 @@ const getPrice = () => {
     });
 }
 
-
-
+getPrice();
 
 module.exports = getPrice;
+
+
+
