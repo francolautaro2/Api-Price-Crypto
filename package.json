@@ -4,7 +4,7 @@
   "description": "esto es un test",
   "main": "index.js",
   "scripts": {
-    "dev": "node main.js"
+    "dev": "nodemon main.js"
   },
   "repository": {
     "type": "git",
