@@ -6,6 +6,6 @@ price.getPrice();
 
 router.get('/api/ethereum', (req,res) => {
     res.send(dataEthereum)
-})
+});
 
 module.exports = router;

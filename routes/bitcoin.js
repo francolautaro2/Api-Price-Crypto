@@ -6,6 +6,6 @@ price.getPrice();
 
 router.get('/api/bitcoin', (req,res) => {
     res.send(dataBitcoin);
-})
+});
 
-module.exports = router
+module.exports = router;
