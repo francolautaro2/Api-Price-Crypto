@@ -18,8 +18,7 @@ const getPrice = () => {
     });
 }
 
-// called the function for get price to apis
-getPrice();
+
 
 
 module.exports = getPrice;
