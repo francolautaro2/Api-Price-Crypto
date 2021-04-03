@@ -2,13 +2,14 @@
 // api utilized https://www.coindesk.com/
 // api utilized https://min-api.cryptocompare.com/
 
+const { addListener } = require('nodemon');
 const request = require('request');
 
 const getPrice = () => {
     const bitcoin = request('https://api.coindesk.com/v1/bpi/currentprice.json', (error, response, body) => {
         if(!error && response.statusCode == 200){
             dataBitcoin = JSON.parse(body);
-        }
+        }    
     });
 
     const Ethereum = request('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,CNY,JPY,GBP',(error, response, body) => {
@@ -18,9 +19,5 @@ const getPrice = () => {
     });
 }
 
-getPrice();
 
-module.exports = getPrice;
-
-
-
+module.exports = {getPrice};
